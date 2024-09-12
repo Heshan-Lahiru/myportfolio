@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lahiru Heshan - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .hero-pattern {
+            background-image: url('src/cover.png'); 
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+            height: 50vh;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+@media (max-width: 1090px) {
+            .hero-pattern {
+                min-height: 150px;
+                height: 30vh;
+            }
+        }
+
+
+@media (max-width: 768px) {
+            .hero-pattern {
+                min-height: 100px;
+                height: 20vh;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-pattern {
+                min-height: 70px;
+                height: 10vh;
+            }
+        }
+        .section-heading {
+            position: relative;
+            display: inline-block;
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #4158D0;
+        }
+        .skill-badge {
+            transition: all 0.3s ease;
+        }
+        .skill-badge:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="hero-pattern text-white py-20">
+       
+    </header>
+
+    <nav class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="src/Cv.pdf" class="text-gray-600 hover:text-blue-600 transition duration-300" target="_blank">My CV</a></li>
+
+                <li><a href="#skills" class="text-gray-600 hover:text-blue-600 transition duration-300">Skills</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-blue-600 transition duration-300">Projects</a></li>
+                <li><a href="#education" class="text-gray-600 hover:text-blue-600 transition duration-300">Education</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-12">
+        <section id="about" class="mb-20">
+            <h2 class="section-heading text-3xl font-bold mb-8">About Me</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                My name is K.B.L. Lahiru Heshan, Proficient in HTML, CSS, PHP, Java,
+C, and the MERN stack (Node.js, React.js, Express.js, MongoDB).
+Experienced with MySQL and foundational knowledge in Go, Rust,
+and Python. Skilled in VS Code and Android Studio for web and
+mobile app development. Currently expanding Go language expertise
+under the mentorship of Indian software engineer Gunjan Tank.
+Active mentor in web development and engaged in a collaborative
+Python project with a Dubai-based partner.
+            </p>
+        </section>
+
+        <section id="skills" class="mb-20">
+            <h2 class="section-heading text-3xl font-bold mb-8">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="skill-badge bg-white p-4 rounded-lg text-center shadow-sm">
+                    <i class="fab fa-java text-4xl mb-2 text-blue-500"></i>
+                    <p>Java</p>
+                </div>
+                <div class="skill-badge bg-white p-4 rounded-lg text-center shadow-sm">
+                    <i class="fab fa-node-js text-4xl mb-2 text-green-500"></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-badge bg-white p-4 rounded-lg text-center shadow-sm">
+                    <i class="fab fa-php text-4xl mb-2 text-purple-500"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="skill-badge bg-white p-4 rounded-lg text-center shadow-sm">
+                    <i class="fas fa-code text-4xl mb-2 text-gray-700"></i>
+                    <p>C</p>
+                </div>
+                <div class="skill-badge bg-white p-4 rounded-lg text-center shadow-sm">
+                    <i class="fab fa-golang text-4xl mb-2 text-blue-300"></i>
+                    <p>Go</p>
+                </div>
+                <div class="skill-badge bg-white p-4 rounded-lg text-center shadow-sm">
+                    <i class="fab fa-python text-4xl mb-2 text-yellow-500"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-badge bg-white p-4 rounded-lg text-center shadow-sm">
+                    <i class="fab fa-html5 text-4xl mb-2 text-orange-500"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-badge bg-white p-4 rounded-lg text-center shadow-sm">
+                    <i class="fab fa-css3-alt text-4xl mb-2 text-blue-400"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-badge bg-white p-4 rounded-lg text-center shadow-sm">
+                    <i class="fab fa-js text-4xl mb-2 text-yellow-400"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-badge bg-white p-4 rounded-lg text-center shadow-sm">
+                    <i class="fab fa-react text-4xl mb-2 text-blue-400"></i>
+                    <p>React.js</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-20">
+            <h2 class="section-heading text-3xl font-bold mb-8">Working Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Safari Management System</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive system for managing safari operations.</p>
+                        <a href="https://github.com/Heshan-Lahiru/Safari-Website.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Event Management System</h3>
+                        <p class="text-gray-600 mb-4">A platform for organizing and managing events efficiently.</p>
+                        <a href="https://github.com/Heshan-Lahiru/Event-planing-website-PHP-.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Cloud Gram Site</h3>
+                        <p class="text-gray-600 mb-4">A social media platform for sharing and connecting.</p>
+                        <a href="https://github.com/Heshan-Lahiru/cloudgram-site.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Golang Todo App</h3>
+                        <p class="text-gray-600 mb-4">A simple and efficient todo application built with Go.</p>
+                        <a href="https://github.com/Heshan-Lahiru/Golang-Todo-App.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Android App</h3>
+                        <p class="text-gray-600 mb-4">A native Android application showcasing mobile development skills.</p>
+                        <a href="https://github.com/Heshan-Lahiru/Android-App.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">React Native Mobile App</h3>
+                        <p class="text-gray-600 mb-4">A cross-platform mobile application built with React Native.</p>
+                        <a href="https://github.com/Heshan-Lahiru/React_native_mobileapp.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+
+
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">JAVA SWING CHATAPP
+</h3>
+                        <p class="text-gray-600 mb-4">Java Swing chat application using JFrame .</p>
+                        <a href="https://github.com/Heshan-Lahiru/JAVA_Swing_ChatApp.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+
+
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">JAVA DEFENCE SYSTEM
+</h3>
+                        <p class="text-gray-600 mb-4">manages and monitors various defense units, including Helicopters, Tanks, and Submarines.</p>
+                        <a href="https://github.com/Heshan-Lahiru/Java-defence-system.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">EVENT SERVICES AND EVENT MANAGEMENT
+</h3>
+                        <p class="text-gray-600 mb-4">A platform for organizing and managing events efficiently.</p>
+                        <a href="https://github.com/Heshan-Lahiru/Demo.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section id="education" class="mb-20">
+            <h2 class="section-heading text-3xl font-bold mb-8">Education</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Bandaranayake College Gampaha</h3>
+                    <p class="text-gray-600">Completed A/L exam (Passed) Tech Stream</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">IUHS Campus</h3>
+                    <p class="text-gray-600">IT Higher National Diploma in IT</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Oxford Home Study Centre (Online)</h3>
+                    <p class="text-gray-600">Diploma in Cyber Security</p>
+                    <p class="text-gray-600">Certificate in Cyber Security Course</p>
+ <p class="text-gray-600">Cyber Security (Short
+Course)</p>
+ <p class="text-gray-600">Business Management
+(Short Course)</p>
+
+
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Great Learning Academy (Online)</h3>
+                    <p class="text-gray-600">AWS Project Certificate Course</p>
+                    <p class="text-gray-600">Introduction to Google
+Cloud Platform Course
+</p>
+                    <p class="text-gray-600">Cloud Computing
+Architecture Course</p>
+
+                </div>
+
+<div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">AGORA-UNICEF (ONLINE )</h3>
+                    <p class="text-gray-600">Situation Analyses in Emergencies Preparedness and Response Course</p>
+</div>
+
+<div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">SAYLOR (ONLINE )</h3>
+                    <p class="text-gray-600">C++ Programming Certificate Course</p>
+<p class="text-gray-600">Python For Data Science Certification Course</p>
+
+</div>
+
+<div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">SKILLUP (ONLINE )</h3>
+                    <p class="text-gray-600">Learn CCNA 200-301 Network
+Fundamentals Online</p>
+</div>
+
+<div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">CodinGame (ONLINE )</h3>
+                    <p class="text-gray-600">Coding speed (Bronze level)</p>
+</div>
+
+<div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">AWS (AMAZON WEB SERVICES)</h3>
+                    <p class="text-gray-600">Earners of this badge have completed the Getting
+Started with Storage training and achieved the
+required scores on the post-course assessment
+</p>
+<p class="text-gray-600">Earners of this badge have completed the Cloud
+Computing 101 training and achieved the required
+scores on the post-course assessment</p>
+</div>
+
+<div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">CISCO PACKET TRACER NETWORKING</h3>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Microsoft Education</h3>
+                  
+<a href="https://learn.microsoft.com/en-us/users/kehelbaddaraliyanage-5720/transcript/dwgk4ho9n6z6ryl?tab=credentials-tab">Transcript link</a>
+                    </div>
+
+
+            </div>
+        </section>
+
+        <section id="contact" class="mb-20">
+            <h2 class="section-heading text-3xl font-bold mb-8">Contact Me</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <ul class="space-y-4">
+                    <li class="flex items-center">
+                        <i class="fas fa-phone text-blue-500 mr-4"></i>
+                        <span>+94-764165833</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-blue-500 mr-4"></i>
+                        <span>158/1, Pethiyagoda, Gampaha</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope text-blue-500 mr-4"></i>
+                        <a href="mailto:lahiruheshan454@gmail.com" class="text-blue-600 hover:underline">lahiruheshan454@gmail.com</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fab fa-github text-blue-500 mr-4"></i>
+                        <a href="https://github.com/Heshan-Lahiru" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fab fa-linkedin text-blue-500 mr-4"></i>
+                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fab fa-twitter text-blue-500 mr-4"></i>
+                        <a href="https://x.com/HLahiru26124" target="_blank" class="text-blue-600 hover:underline">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 K.B.L. Lahiru Heshan. All rights reserved.</p>
+            <p class="mt-2">Current Date: <span id="date"></span> | Current Time: <span id="time"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('date').textContent = now.toLocaleDateString();
+            document.getElementById('time').textContent = now.toLocaleTimeString();
+        }
+
+        updateDateTime();
+        setInterval
